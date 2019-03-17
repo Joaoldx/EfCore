@@ -34,4 +34,5 @@ P:\NovosProjetos\CSharp\EfCore4\WebApp\bin\Debug\netcoreapp2.1\DataAcess.dll
 P:\NovosProjetos\CSharp\EfCore4\WebApp\bin\Debug\netcoreapp2.1\Domain.dll
 P:\NovosProjetos\CSharp\EfCore4\WebApp\bin\Debug\netcoreapp2.1\DataAcess.pdb
 P:\NovosProjetos\CSharp\EfCore4\WebApp\bin\Debug\netcoreapp2.1\Domain.pdb
+P:\NovosProjetos\CSharp\EfCore4\WebApp\obj\Debug\netcoreapp2.1\Razor\Views\Category\Save.g.cshtml.cs
 P:\NovosProjetos\CSharp\EfCore4\WebApp\obj\Debug\netcoreapp2.1\Razor\Views\Category\Index.g.cshtml.cs
