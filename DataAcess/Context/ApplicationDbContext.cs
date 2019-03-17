@@ -1,0 +1,15 @@
+using Domain.Entity;
+using JetBrains.Annotations;
+using Microsoft.EntityFrameworkCore;
+
+namespace DataAcess.Context
+{
+    public class ApplicationDbContext : DbContext
+    {
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
+        {
+        }
+
+        public DbSet<Category> Categories { get; set; }
+    }
+}
