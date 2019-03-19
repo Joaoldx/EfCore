@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace DataAcess.Migrations
 {
-    public partial class AdicionandoProduto : Migration
+    public partial class Products : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -13,23 +13,23 @@ namespace DataAcess.Migrations
                 {
                     Id = table.Column<Guid>(nullable: false),
                     Name = table.Column<string>(nullable: true),
-                    CategoryIdId = table.Column<Guid>(nullable: true)
+                    CategoryId = table.Column<Guid>(nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Products", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Products_Categories_CategoryIdId",
-                        column: x => x.CategoryIdId,
+                        name: "FK_Products_Categories_CategoryId",
+                        column: x => x.CategoryId,
                         principalTable: "Categories",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_Products_CategoryIdId",
+                name: "IX_Products_CategoryId",
                 table: "Products",
-                column: "CategoryIdId");
+                column: "CategoryId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)

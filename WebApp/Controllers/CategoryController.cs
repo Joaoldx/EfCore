@@ -1,3 +1,4 @@
+using System;
 using System.Linq;
 using System.Threading.Tasks;
 using DataAcess.Context;
@@ -27,7 +28,24 @@ namespace WebApp.Controllers
 
         [HttpPost]
         public async Task<IActionResult> Save(Category category){
-            _context.Categories.Add(category);
+            if (category.Id == Guid.Empty){
+                _context.Categories.Add(category);
+            } else {
+                var categoryToEdit = _context.Categories.First(c => c.Id == category.Id);
+                categoryToEdit.Name = category.Name;
+            }
+            await _context.SaveChangesAsync();
+            return RedirectToAction("Index");
+        }
+
+        public IActionResult Edit(Guid id){
+            var category = _context.Categories.First(c => c.Id == id);
+            return View("Save", category);
+        }
+
+        public async Task<IActionResult> Delete(Guid id) {
+            var category = _context.Categories.First(c => c.Id == id);
+            _context.Categories.Remove(category);
             await _context.SaveChangesAsync();
             return RedirectToAction("Index");
         }

@@ -36,22 +36,23 @@ namespace DataAcess.Migrations
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<Guid?>("CategoryIdId");
+                    b.Property<Guid>("CategoryId");
 
                     b.Property<string>("Name");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("CategoryIdId");
+                    b.HasIndex("CategoryId");
 
                     b.ToTable("Products");
                 });
 
             modelBuilder.Entity("Domain.Entity.Product", b =>
                 {
-                    b.HasOne("Domain.Entity.Category", "CategoryId")
+                    b.HasOne("Domain.Entity.Category", "Category")
                         .WithMany()
-                        .HasForeignKey("CategoryIdId");
+                        .HasForeignKey("CategoryId")
+                        .OnDelete(DeleteBehavior.Cascade);
                 });
 #pragma warning restore 612, 618
         }
