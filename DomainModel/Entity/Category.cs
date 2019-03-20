@@ -1,6 +1,6 @@
 using System;
 
-namespace Domain.Entity
+namespace DomainModel.Entity
 {
     public class Category
     {

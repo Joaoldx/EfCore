@@ -12,3 +12,17 @@
 /Users/joaoluisdomingos/Desktop/Projetos/CSharp/EfCore/DomainService/bin/Debug/netstandard2.0/DataAcess.pdb
 /Users/joaoluisdomingos/Desktop/Projetos/CSharp/EfCore/DomainService/obj/Debug/netstandard2.0/DomainService.csprojAssemblyReference.cache
 /Users/joaoluisdomingos/Desktop/Projetos/CSharp/EfCore/DomainService/obj/Debug/netstandard2.0/DomainService.csproj.CopyComplete
+P:\NovosProjetos\CSharp\EfCore4\DomainService\bin\Debug\netstandard2.0\DomainService.deps.json
+P:\NovosProjetos\CSharp\EfCore4\DomainService\bin\Debug\netstandard2.0\DomainService.dll
+P:\NovosProjetos\CSharp\EfCore4\DomainService\bin\Debug\netstandard2.0\DomainService.pdb
+P:\NovosProjetos\CSharp\EfCore4\DomainService\bin\Debug\netstandard2.0\DataAccess.dll
+P:\NovosProjetos\CSharp\EfCore4\DomainService\bin\Debug\netstandard2.0\DomainModel.dll
+P:\NovosProjetos\CSharp\EfCore4\DomainService\bin\Debug\netstandard2.0\DomainModel.pdb
+P:\NovosProjetos\CSharp\EfCore4\DomainService\bin\Debug\netstandard2.0\DataAccess.pdb
+P:\NovosProjetos\CSharp\EfCore4\DomainService\obj\Debug\netstandard2.0\DomainService.csprojAssemblyReference.cache
+P:\NovosProjetos\CSharp\EfCore4\DomainService\obj\Debug\netstandard2.0\DomainService.csproj.CoreCompileInputs.cache
+P:\NovosProjetos\CSharp\EfCore4\DomainService\obj\Debug\netstandard2.0\DomainService.AssemblyInfoInputs.cache
+P:\NovosProjetos\CSharp\EfCore4\DomainService\obj\Debug\netstandard2.0\DomainService.AssemblyInfo.cs
+P:\NovosProjetos\CSharp\EfCore4\DomainService\obj\Debug\netstandard2.0\DomainService.csproj.CopyComplete
+P:\NovosProjetos\CSharp\EfCore4\DomainService\obj\Debug\netstandard2.0\DomainService.dll
+P:\NovosProjetos\CSharp\EfCore4\DomainService\obj\Debug\netstandard2.0\DomainService.pdb

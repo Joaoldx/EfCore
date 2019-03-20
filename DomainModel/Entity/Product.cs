@@ -1,7 +1,6 @@
 using System;
-using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Domain.Entity
+namespace DomainModel.Entity
 {
     public class Product
     {

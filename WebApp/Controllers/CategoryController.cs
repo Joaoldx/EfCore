@@ -1,8 +1,11 @@
 using System;
 using System.Linq;
 using System.Threading.Tasks;
-using DataAcess.Context;
+using DataAccess.Context;
+using DomainModel.Entity;
 using Microsoft.AspNetCore.Mvc;
+using DomainService.Repositories;
+using DomainService.Services;
 
 namespace WebApp.Controllers
 {
@@ -10,12 +13,12 @@ namespace WebApp.Controllers
     {
 
         private ApplicationDbContext _context;
-        private ICategoryService _categoryService;
+        private ICategoryRepository _categoryService;
 
-        public CategoryController(ICategoryService categoryService)
+        public CategoryController(ApplicationDbContext context)
         {
             _context = context;
-        }
+        } 
 
         public IActionResult Index() {
             var categories = _context.Categories.ToList();

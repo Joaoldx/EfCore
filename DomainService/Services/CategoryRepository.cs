@@ -1,12 +1,17 @@
 
 using System.Collections.Generic;
-using Domain.Entity;
-using Domain.Interfaces.Repositories;
+using DataAccess.Context;
+using DomainModel.Entity;
+using DomainService.Repositories;
 
-namespace Domain.Interfaces.Services
+namespace DomainService.Services
 {
     public class CategoryRepository : ICategoryRepository
     {
+        
+        public CategoryRepository(ApplicationDbContext context)
+        {
+        }
 
         public void Create(Category category)
         {

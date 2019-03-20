@@ -1,8 +1,8 @@
 using System;
 using System.Linq;
 using System.Threading.Tasks;
-using DataAcess.Context;
-using Domain.Entity;
+using DataAccess.Context;
+using DomainModel.Entity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace WebApp.Controllers

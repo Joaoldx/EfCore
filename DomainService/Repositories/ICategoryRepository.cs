@@ -1,12 +1,12 @@
 using System.Collections.Generic;
-using Domain.Entity;
+using DomainModel.Entity;
 
-namespace Domain.Interfaces.Repositories
+namespace DomainService.Repositories
 {
     public interface ICategoryRepository
     {
-         void Create(Category category);
+        void Create(Category category);
 
-         IEnumerable<Category> FindAll();
+        IEnumerable<Category> FindAll();
     }
 }
