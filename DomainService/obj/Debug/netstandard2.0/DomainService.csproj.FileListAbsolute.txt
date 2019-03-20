@@ -1,0 +1,14 @@
+/Users/joaoluisdomingos/Desktop/Projetos/CSharp/EfCore/DomainService/bin/Debug/netstandard2.0/DomainService.deps.json
+/Users/joaoluisdomingos/Desktop/Projetos/CSharp/EfCore/DomainService/bin/Debug/netstandard2.0/DomainService.dll
+/Users/joaoluisdomingos/Desktop/Projetos/CSharp/EfCore/DomainService/bin/Debug/netstandard2.0/DomainService.pdb
+/Users/joaoluisdomingos/Desktop/Projetos/CSharp/EfCore/DomainService/obj/Debug/netstandard2.0/DomainService.csproj.CoreCompileInputs.cache
+/Users/joaoluisdomingos/Desktop/Projetos/CSharp/EfCore/DomainService/obj/Debug/netstandard2.0/DomainService.AssemblyInfoInputs.cache
+/Users/joaoluisdomingos/Desktop/Projetos/CSharp/EfCore/DomainService/obj/Debug/netstandard2.0/DomainService.AssemblyInfo.cs
+/Users/joaoluisdomingos/Desktop/Projetos/CSharp/EfCore/DomainService/obj/Debug/netstandard2.0/DomainService.dll
+/Users/joaoluisdomingos/Desktop/Projetos/CSharp/EfCore/DomainService/obj/Debug/netstandard2.0/DomainService.pdb
+/Users/joaoluisdomingos/Desktop/Projetos/CSharp/EfCore/DomainService/bin/Debug/netstandard2.0/DataAcess.dll
+/Users/joaoluisdomingos/Desktop/Projetos/CSharp/EfCore/DomainService/bin/Debug/netstandard2.0/DomainModel.dll
+/Users/joaoluisdomingos/Desktop/Projetos/CSharp/EfCore/DomainService/bin/Debug/netstandard2.0/DomainModel.pdb
+/Users/joaoluisdomingos/Desktop/Projetos/CSharp/EfCore/DomainService/bin/Debug/netstandard2.0/DataAcess.pdb
+/Users/joaoluisdomingos/Desktop/Projetos/CSharp/EfCore/DomainService/obj/Debug/netstandard2.0/DomainService.csprojAssemblyReference.cache
+/Users/joaoluisdomingos/Desktop/Projetos/CSharp/EfCore/DomainService/obj/Debug/netstandard2.0/DomainService.csproj.CopyComplete

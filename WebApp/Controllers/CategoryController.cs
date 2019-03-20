@@ -2,16 +2,17 @@ using System;
 using System.Linq;
 using System.Threading.Tasks;
 using DataAcess.Context;
-using Domain.Entity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace WebApp.Controllers
 {
     public class CategoryController : Controller
     {
-        private ApplicationDbContext _context;
 
-        public CategoryController(ApplicationDbContext context)
+        private ApplicationDbContext _context;
+        private ICategoryService _categoryService;
+
+        public CategoryController(ICategoryService categoryService)
         {
             _context = context;
         }

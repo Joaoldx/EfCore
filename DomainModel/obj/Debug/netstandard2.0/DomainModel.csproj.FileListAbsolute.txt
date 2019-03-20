@@ -1,0 +1,9 @@
+/Users/joaoluisdomingos/Desktop/Projetos/CSharp/EfCore/DomainModel/bin/Debug/netstandard2.0/DomainModel.deps.json
+/Users/joaoluisdomingos/Desktop/Projetos/CSharp/EfCore/DomainModel/bin/Debug/netstandard2.0/DomainModel.dll
+/Users/joaoluisdomingos/Desktop/Projetos/CSharp/EfCore/DomainModel/bin/Debug/netstandard2.0/DomainModel.pdb
+/Users/joaoluisdomingos/Desktop/Projetos/CSharp/EfCore/DomainModel/obj/Debug/netstandard2.0/DomainModel.csprojAssemblyReference.cache
+/Users/joaoluisdomingos/Desktop/Projetos/CSharp/EfCore/DomainModel/obj/Debug/netstandard2.0/DomainModel.csproj.CoreCompileInputs.cache
+/Users/joaoluisdomingos/Desktop/Projetos/CSharp/EfCore/DomainModel/obj/Debug/netstandard2.0/DomainModel.AssemblyInfoInputs.cache
+/Users/joaoluisdomingos/Desktop/Projetos/CSharp/EfCore/DomainModel/obj/Debug/netstandard2.0/DomainModel.AssemblyInfo.cs
+/Users/joaoluisdomingos/Desktop/Projetos/CSharp/EfCore/DomainModel/obj/Debug/netstandard2.0/DomainModel.dll
+/Users/joaoluisdomingos/Desktop/Projetos/CSharp/EfCore/DomainModel/obj/Debug/netstandard2.0/DomainModel.pdb
