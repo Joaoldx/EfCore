@@ -6,3 +6,4 @@ P:\NovosProjetos\CSharp\EfCore4\DomainModel\obj\Debug\netstandard2.0\DomainModel
 P:\NovosProjetos\CSharp\EfCore4\DomainModel\obj\Debug\netstandard2.0\DomainModel.AssemblyInfo.cs
 P:\NovosProjetos\CSharp\EfCore4\DomainModel\obj\Debug\netstandard2.0\DomainModel.dll
 P:\NovosProjetos\CSharp\EfCore4\DomainModel\obj\Debug\netstandard2.0\DomainModel.pdb
+P:\NovosProjetos\CSharp\EfCore4\DomainModel\obj\Debug\netstandard2.0\DomainModel.csprojAssemblyReference.cache

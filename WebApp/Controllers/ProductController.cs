@@ -4,20 +4,22 @@ using System.Threading.Tasks;
 using DataAccess.Context;
 using DomainModel.Entity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace WebApp.Controllers
 {
     public class ProductController : Controller
     {
-        private ApplicationDbContext _context;
+        private ApplicationDbContext _context = new ApplicationDbContext();
 
-        public ProductController(ApplicationDbContext context)
+       /*  public ProductController(ApplicationDbContext context)
         {
             _context = context;
-        }
+        } */
 
+        [HttpGet]
         public IActionResult Index() {
-            var product = _context.Products.ToList();
+            var product = _context.Products.Include(p => p.Category).ToList();
             return View(product);
         } 
 
