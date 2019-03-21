@@ -12,13 +12,8 @@ namespace WebApp.Controllers
     public class CategoryController : Controller
     {
 
-        private ApplicationDbContext _context;
+        private ApplicationDbContext _context = new ApplicationDbContext();
         private ICategoryRepository _categoryService;
-
-        public CategoryController(ApplicationDbContext context)
-        {
-            _context = context;
-        } 
 
         public IActionResult Index() {
             var categories = _context.Categories.ToList();
