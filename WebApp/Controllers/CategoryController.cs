@@ -2,22 +2,21 @@ using System;
 using System.Linq;
 using System.Threading.Tasks;
 using DataAccess.Context;
+using DataAccess.Repositories;
 using DomainModel.Entity;
-using Microsoft.AspNetCore.Mvc;
 using DomainService.Repositories;
-using DomainService.Services;
+using Microsoft.AspNetCore.Mvc;
 
 namespace WebApp.Controllers
 {
     public class CategoryController : Controller
     {
-
         private ApplicationDbContext _context = new ApplicationDbContext();
-        private ICategoryRepository _categoryService;
+
+        private static ICategoryRepository _categoryRepository = new CategoryEFRepository();
 
         public IActionResult Index() {
-            var categories = _context.Categories.ToList();
-            return View(categories);
+            return View(_categoryRepository.FindAll());
         }
 
         [HttpGet]
@@ -26,14 +25,9 @@ namespace WebApp.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Save(Category category){
-            if (category.Id == Guid.Empty){
-                _context.Categories.Add(category);
-            } else {
-                var categoryToEdit = _context.Categories.First(c => c.Id == category.Id);
-                categoryToEdit.Name = category.Name;
-            }
-            await _context.SaveChangesAsync();
+        public IActionResult Save(Category category){
+         
+            _categoryRepository.Create(category);
             return RedirectToAction("Index");
         }
 

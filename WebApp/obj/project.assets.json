@@ -4452,6 +4452,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "DomainModel": "1.0.0",
+          "DomainService": "1.0.0",
           "Microsoft.EntityFrameworkCore": "2.1.2",
           "Microsoft.EntityFrameworkCore.Proxies": "2.1.2",
           "Microsoft.EntityFrameworkCore.SqlServer": "2.1.2",
@@ -4480,7 +4481,6 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "DataAccess": "1.0.0",
           "DomainModel": "1.0.0"
         },
         "compile": {

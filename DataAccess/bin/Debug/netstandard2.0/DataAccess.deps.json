@@ -10,6 +10,7 @@
       "DataAccess/1.0.0": {
         "dependencies": {
           "DomainModel": "1.0.0",
+          "DomainService": "1.0.0",
           "Microsoft.EntityFrameworkCore": "2.1.2",
           "Microsoft.EntityFrameworkCore.Proxies": "2.1.2",
           "Microsoft.EntityFrameworkCore.SqlServer": "2.1.2",
@@ -981,6 +982,14 @@
         "runtime": {
           "DomainModel.dll": {}
         }
+      },
+      "DomainService/1.0.0": {
+        "dependencies": {
+          "DomainModel": "1.0.0"
+        },
+        "runtime": {
+          "DomainService.dll": {}
+        }
       }
     }
   },
@@ -1600,6 +1609,11 @@
       "hashPath": "system.xml.xmldocument.4.3.0.nupkg.sha512"
     },
     "DomainModel/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DomainService/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

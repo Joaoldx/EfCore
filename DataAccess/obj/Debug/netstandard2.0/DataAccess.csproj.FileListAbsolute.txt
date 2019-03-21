@@ -2,7 +2,9 @@ P:\NovosProjetos\CSharp\EfCore4\DataAccess\bin\Debug\netstandard2.0\DataAccess.d
 P:\NovosProjetos\CSharp\EfCore4\DataAccess\bin\Debug\netstandard2.0\DataAccess.dll
 P:\NovosProjetos\CSharp\EfCore4\DataAccess\bin\Debug\netstandard2.0\DataAccess.pdb
 P:\NovosProjetos\CSharp\EfCore4\DataAccess\bin\Debug\netstandard2.0\DomainModel.dll
+P:\NovosProjetos\CSharp\EfCore4\DataAccess\bin\Debug\netstandard2.0\DomainService.dll
 P:\NovosProjetos\CSharp\EfCore4\DataAccess\bin\Debug\netstandard2.0\DomainModel.pdb
+P:\NovosProjetos\CSharp\EfCore4\DataAccess\bin\Debug\netstandard2.0\DomainService.pdb
 P:\NovosProjetos\CSharp\EfCore4\DataAccess\obj\Debug\netstandard2.0\DataAccess.csprojAssemblyReference.cache
 P:\NovosProjetos\CSharp\EfCore4\DataAccess\obj\Debug\netstandard2.0\DataAccess.csproj.CoreCompileInputs.cache
 P:\NovosProjetos\CSharp\EfCore4\DataAccess\obj\Debug\netstandard2.0\DataAccess.AssemblyInfoInputs.cache
