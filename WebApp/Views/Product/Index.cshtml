@@ -1,4 +1,4 @@
-﻿@model IEnumerable<Domain.Entity.Product>
+﻿@model IEnumerable<DomainModel.Entity.Product>
 
 @{
     ViewData["Title"] = "Produtos";
@@ -20,6 +20,7 @@
                 {
                     <tr>
                         <td>@item.Name</td>
+                        <td>@item.Category.Name</td>
                         <td>
                             <a href="/Product/Edit/@item.Id" class="btn">Editar</a>
                         </td>

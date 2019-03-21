@@ -19,7 +19,7 @@ namespace WebApp.Controllers
 
         [HttpGet]
         public IActionResult Index() {
-            var product = _context.Products.Include(p => p.Category).ToList();
+            var product = _context.Products.ToList();
             return View(product);
         } 
 
@@ -36,18 +36,21 @@ namespace WebApp.Controllers
         } else {
             var productToEdit = _context.Products.First(c => c.Id == product.Id);
             productToEdit.Name = product.Name;
+            productToEdit.CategoryId = product.CategoryId;
         } 
         await _context.SaveChangesAsync();
         return RedirectToAction("Index");
         }
 
+        [HttpGet]
         public IActionResult Edit(Guid id){
-            var product = _context.Products.First(c => c.Id == id);
+            var product = _context.Products.First(p => p.Id == id);
+            ViewBag.Categories = _context.Categories.ToList();
             return View("Save", product);
         }
 
         public async Task<IActionResult> Delete(Guid id) {
-            var product = _context.Products.First(c => c.Id == id);
+            var product = _context.Products.First(p => p.Id == id);
             _context.Products.Remove(product);
             await _context.SaveChangesAsync();
             return RedirectToAction("Index");
