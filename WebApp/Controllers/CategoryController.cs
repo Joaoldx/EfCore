@@ -11,8 +11,6 @@ namespace WebApp.Controllers
 {
     public class CategoryController : Controller
     {
-        private ApplicationDbContext _context = new ApplicationDbContext();
-
         private static ICategoryRepository _categoryRepository = new CategoryEFRepository();
 
         public IActionResult Index() {
@@ -26,20 +24,19 @@ namespace WebApp.Controllers
 
         [HttpPost]
         public IActionResult Save(Category category){
-         
             _categoryRepository.Create(category);
             return RedirectToAction("Index");
         }
 
+        [HttpGet]
         public IActionResult Edit(Guid id){
-            var category = _context.Categories.First(c => c.Id == id);
-            return View("Save", category);
+            //var category = _context.Categories.First(c => c.Id == id);
+            return View("Save", _categoryRepository.FindById(id));
         }
 
-        public async Task<IActionResult> Delete(Guid id) {
-            var category = _context.Categories.First(c => c.Id == id);
-            _context.Categories.Remove(category);
-            await _context.SaveChangesAsync();
+        [HttpGet]
+        public IActionResult Delete(Guid id) {
+            _categoryRepository.Delete(id);
             return RedirectToAction("Index");
         }
     }

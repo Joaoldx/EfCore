@@ -11,6 +11,14 @@ namespace DataAccess.Repositories
     {
         private ApplicationDbContext _context = new ApplicationDbContext();
 
+        public IEnumerable<Category> FindAll()
+        {
+            return _context.Categories.ToList();
+        }
+
+        public Category FindById(Guid categoryId){
+            return _context.Categories.Find(categoryId);
+        }
         public void Create(Category category)
         {
             if (category.Id == Guid.Empty){
@@ -22,9 +30,17 @@ namespace DataAccess.Repositories
             _context.SaveChanges();
         }
 
-        public IEnumerable<Category> FindAll()
+        public void Delete(Guid categoryId)
         {
-            return _context.Categories.ToList();
+            _context.Categories.Remove(FindById(categoryId));
+            _context.SaveChanges();
+        }
+
+        public void Edit(Category category)
+        {
+            var categoryToEdit = FindById(category.Id);
+            categoryToEdit.Name = category.Name;
+            _context.SaveChanges();
         }
     }
 }
